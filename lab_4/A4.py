@@ -28,8 +28,7 @@ def getCardType(string):
         return "American Express"
     if len(string) == 16 and re.match(r'5[1-5]', string[:2]):
         return "Master Card"
-    else:
-        return "Invalid"
+    return "Invalid"
 
 
 cardNumber = input("Enter Card Number: ")
